@@ -7,7 +7,7 @@ import abi from "../abi/contract.json"
 import { toast } from 'react-hot-toast';
 import Loading from '../components/Loading';
 
-const create = () => {
+const Create = () => {
   const {push} = useRouter()
   const [state, setState] = useState({
     name: '',
@@ -79,4 +79,4 @@ push('/')
   )
 }
 
-export default create
+export default Create
