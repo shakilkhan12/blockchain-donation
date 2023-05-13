@@ -93,7 +93,7 @@ const Home: NextPage = () => {
           </thead>
           <tbody>
             {allDonations?.map((donar, index) => (
-              <tr className='border-b hover:bg-gray-50 transition-all duration-500'>
+              <tr className='border-b hover:bg-gray-50 transition-all duration-500' key={index}>
                 <td className='text-sm p-5 font-medium text-gray-800'>{index + 1}</td>
                 <td className='text-sm p-5 text-gray-800 capitalize font-semibold'>{donar.name}</td>
                 <td className='text-sm p-5 font-medium text-gray-800'>{donar.donarAddress}</td>
