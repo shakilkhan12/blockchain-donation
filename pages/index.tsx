@@ -75,7 +75,7 @@ const Home: NextPage = () => {
 
       <main>
       <div className='max-w-screen-xl mx-auto'>
-        {!isConnected ? <Alert className='mt-5'>Please connect your wallet to see the transactions</Alert> :  loading ? 'Loading...' : allDonations?.length > 0 ? 
+        {!isConnected ? <Alert className='mt-5'>Please connect your wallet to see the transactions</Alert> :  loading ? <Loading mt='mt-5' /> : allDonations?.length > 0 ? 
         <>
         <div className='mt-5 bg-white p-5 flex items-center justify-between'>
           <span className='capitalize text-sm'>total</span>
